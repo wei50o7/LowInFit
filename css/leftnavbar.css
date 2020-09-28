@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+/*=========================================MAIN WRAPPER===============================================================================*/
+.container-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #eee;
+}
+
+.container-wrapper form {
+  position: absolute;
+  display: flex;
+  left: 40vw;
+  bottom: 45vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*=========================================SIDEBAR====================================================================================*/
+.sidebar-container {
+  list-style: none;
+  height: 100%;
+  width: 22.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.sidebar{
+  width: 69%;
+  height: 100%;
+  background: #FFF;
+  box-shadow: 0 0 2px grey;
+  margin: 20px 0;
+}
+
+.sidebar-h2 {
+  width: 100%;
+  height: 100%;
+  font-size: 28px;
+  color: #F4CC;
+  background: #FFF;
+  position: relative;
+}
+
+.sidebar-h2 h2 {
+  line-height: 80px;
+  padding-left: 75px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  position: relative;
+}
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 120px;
+  font-size: 20px;
+  color:#F4CC;
+  padding-left: 40px;
+  transition: 0.5s;
+}
+
+.sidebar ul li:hover a{
+  padding-left: 50px;
+  background-color: #f5c1c1;
+  color:white;
+}
+
+.sidebar-h2::after,
+.sidebar ul li::after {
+  content: '';
+  display: block;
+  background-color: #f4c2c2;
+  width: 90%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(15px);
+}
+
+.sidebar ul a i{
+  margin-right: 16px;
+}
+
+/*===============================================TABLE================================================================================*/
+.table-wrapper {
+  width: 75vw;
+  height: 100%;
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.table-container {
+  width: 90%;
+  height: 100%;
+}
+
+.table-h1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.table-h1 h1{
+  width: 40%;
+  font-weight: bolder;
+  border: 0.5px;
+}
+
+.searchbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar {
+  width: 35%;
+  height: 45%;
+  color: pink;
+}
+
+.searchbar-form {
+
+}
+
+.order-table thead tr{
+  background-color: #f4c2c2;
+  color: grey;
+  text-align: left;
+  font-weight: bold;
+  max-width: 5px;
+  margin: auto;
+  word-wrap: break-word;
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px 15px;
+}
+
+.order-table tbody tr{
+  border-bottom:1px solid grey;
+}
+
+.order-table tbody tr:nth-of-type(even) {
+  background-color: #ccc;
+}
+
+.order-table tbody tr:last-of-type{
+  border-bottom: 2px solid pink;
+}
+
+.order-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.2em;
+  min-width: 100px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px grey;
+}
+
+.order-table tbody {
+  word-wrap: break-word;
+}
+
+.mealpicture,
+.orderremarks,
+.orderstatus,
+.ordermeal,
+.orderstaffincharge {
+  word-wrap: break-word;
+  max-width: 1px;
+}
+
+#searchbar-form {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  margin-top: 20px;
+}
+
+#searchbar-form input:nth-child(1) {
+  width: 15%;
+  color: black;
+}
+
+.menu-table thead tr{
+  background-color: #f4c2c2;
+  color: grey;
+  text-align: left;
+  font-weight: bold;
+  max-width: 5px;
+  margin: auto;
+  word-wrap: break-word;
+}
+
+.menu-table th,
+.menu-table td {
+  padding: 12px 15px;
+}
+
+.menu-table tbody tr{
+  border-bottom:1px solid grey;
+}
+
+.menu-table tbody tr:nth-of-type(even) {
+  background-color: #ccc;
+}
+
+.menu-table tbody tr:last-of-type{
+  border-bottom: 2px solid pink;
+}
+
+.menu-table {
+  border-collapse: collapse;
+  font-size: 1.2em;
+  min-width: 100px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px grey;
+  align-items:  center;
+  align-content: center;
+}
+
+.menu-table tbody {
+  word-wrap: break-word;
+}
+
+.addon-table thead tr{
+  background-color: #f4c2c2;
+  color: grey;
+  text-align: left;
+  font-weight: bold;
+  max-width: 5px;
+  margin: auto;
+  word-wrap: break-word;
+}
+
+.addon-table th,
+.addon-table td {
+  padding: 12px 15px;
+}
+
+.addon-table tbody tr{
+  border-bottom:1px solid grey;
+}
+
+.addon-table tbody tr:nth-of-type(even) {
+  background-color: #ccc;
+}
+
+.addon-table tbody tr:last-of-type{
+  border-bottom: 2px solid pink;
+}
+
+.addon-table {
+  border-collapse: collapse;
+  font-size: 1.2em;
+  min-width: 100px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px grey;
+  align-items:  center;
+  align-content: center;
+  transform: translateY(350px);
+}
+
+.addon-table tbody {
+  word-wrap: break-word;
+}
+
+.reportdatecontainer {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reportdatecontainer form {
+  width: 50%;
+  left: 0;
+  top: 0;
+  margin-bottom: 30px;
+  position: relative!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.div-date {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.div-date div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-date div p {
+  font-size: 17px;
+}
+
+input[value="Generate Report"] {
+  width: 30%;
+  height: 50px;
+  margin-top: 30px;
+  color: #F4CC;
+  border: 3px solid #f4c2c2;
+  background-color: white;
+  border-radius: 10px;
+  transition: .25s;
+}
+
+input[value="Generate Report"]:hover {
+  transform: scale(1.03);
+  background-color: #f4c2c2;
+  color: white;
+}
+
+.table-div {
+  width: 50%;
+  height: 60%;
+
+}
+
+.table-div table {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #f4c2c2;
+}
+
+.tr-header {
+  background-color: #f4c2c2;
+  height: 60px;
+}
+
+.tr-header th {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0px 0px 5px #D5ABAB;
+}
+
+.th-big {
+  width: 60%;
+}
+
+.data td {
+  padding-left: 20px;
+}
+
+.left,
+.center {
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.center {
+  text-align: center;
+}
+
+.total {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total p {
+  margin: 20px;
+  font-size: 22.5px;
+}
+
+.reportnumber {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deliverydate2 {
+  background-color: #FACC;
+
+}
+
+.div-startdate,
+.div-enddate {
+  border: 1px solid black;
+  box-shadow: 0.5px grey;
+  background-color:#f4c2c2;
+
+}
+
+.div-startdate p,
+.div-enddate p {
+font-style: oblique;
+font-weight: bolder;
+font-stretch: expanded;
+}

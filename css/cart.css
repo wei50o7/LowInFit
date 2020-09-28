@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #pink;
+}
+
+.container-wrapper {
+  background-color: #eee;
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.upperDiv {
+  height: 10%;
+  display: flex;
+}
+
+.upperDiv p {
+font-weight: bolder;
+}
+
+.info-container {
+  width: 60%;
+  height: auto;
+  margin: 15px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.address-container,
+.phone-container,
+.delivery-container {
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.address,
+.phone,
+.delivery {
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 3px 0;
+}
+
+.address-info ,
+.number,
+.date {
+  width: 50%;
+  font-size: 15px;
+}
+
+.main-container {
+  background-color: #fff;
+  margin: 15px 0;
+  padding-top: 15px;
+  width: 60%;
+  height: 50vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-empty-container {
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.empty-box {
+  margin: 50px 0;
+  width: 25%;
+}
+
+.desc-empty {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.left-container {
+  display: flex;
+  float: left;
+  width: 65%;
+  height: 90%;
+  position: relative;
+}
+
+.product-img {
+  width: 40%;
+  height: 52%;
+}
+
+.product-img img {
+  max-width: 90%;
+  max-height: auto;
+}
+
+.cart-product-description {
+  width: 56%;
+  height: 50%;
+  font-size: 15px;
+}
+
+.cart-product-description p {
+  padding-top: 5px;
+  width: 100%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.prod-title {
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.prod-title p{
+  font-size: 30px;
+}
+
+.prod-title p::after {
+  content: '';
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: #F4C2C2;
+  position: absolute;
+  bottom: 0;
+}
+
+.add-ons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.addon {
+  transform: translateY(20px);
+  width: 95%;
+  height: 20%;
+  margin: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addon-left {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.addon-left p {
+  font-size: 18px;
+}
+
+.addon-right {
+  width: 55%;
+  height: 100%;
+  position: relative;
+}
+
+.addon-right p {
+  border: 1px solid ;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0px 5px;
+}
+
+.right-container {
+  display: inline-block;
+  float: right;
+  width: 35%;
+  height: 90%;
+}
+
+.prod-nutri {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  padding-top: 20px;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+.prod-nutri table {
+  width: 60%;
+}
+
+.prod-nutri th {
+  padding-left: 15px;
+  font-weight: lighter;
+}
+
+.price {
+  width: 100%;
+  height: 50%;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}

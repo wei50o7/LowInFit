@@ -1,0 +1,62 @@
+
+ h2 {
+  margin-left: 475px;
+  font-family: Catamaran;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+
+
+.container-store-information {
+  display: block;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  line-height: 50px;
+}
+
+
+.container-store-upperbox {
+  display: block;
+  height: 350px;
+  background: #fff;
+  box-shadow: 2px 2px 2px 	#D3D3D3,
+              -2px 2px 2px #D3D3D3;
+}
+
+.container-content {
+  margin-top: 30px;
+  margin-left: 30px ;
+
+}
+
+.container-store-upperbox h3 {
+  padding-top:50px;
+  margin-left: 10px;
+  font-family: Catamaran;
+  font-weight: bold;
+  font-size: 24px;
+
+}
+
+.container-store-upperbox h4 {
+  color: black;
+  font-family: Catamaran;
+  font-weight: bold;
+  font-size: 21px;
+  margin-left: 10px;
+}
+
+.container-store-upperbox p {
+  color: black;
+  font-family: Catamaran;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.border-bottom {
+  width: 100px;
+  height: 5px;
+  color: blue;
+}
